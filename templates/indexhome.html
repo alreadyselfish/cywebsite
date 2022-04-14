@@ -1,0 +1,90 @@
+{% extends 'index0.html' %}
+{% block content %}
+
+<!-- Showcase -->
+<section class="bg-dark text-light p-5 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex ">
+            <div >
+                <span class ="span-for-h1">
+                    <h1>Learn <span class="text-logocol"> Blockchain Development </span> </h1>
+                    <h1>and much more..</span> </h1>
+
+                    <p class = "lead my-5">
+                        The GO to club for Development.
+                        Get the best environment for development and coding where you can not only learn development together with the club members but you can also learn a lot more such as management, social media handling, video editing, etc.
+                    </p>
+
+
+                    <button class="btn btn-outline-light light-buttonapna btn-lg my-3">
+                        <a href="/join">Join Club Now</a>
+                    </button>
+
+                </span>
+
+                
+            </div>
+            <img class="img-fluid w-50" src="static/rocketi.svg" alt="rocket">
+        </div>
+    </div>
+</section>
+{% comment %} End of the Showcase {% endcomment %}
+
+
+
+{% comment %} Start of EVENTSCARD {% endcomment %}
+<section>
+    <div class="container bg-dark text-light form p-3">
+        <h2 class="eventh2 mb-4">
+           Our Upcoming Events
+        </h2>
+
+        <div class="d-md-flex Eventssecincard">
+            {% comment %} EVENT1 CARD {% endcomment %}
+            <div class="d-xl-flex m-2" id = "event1">
+                <img src="static/bookshtcs.jpg" alt="HTML CSS BOOKS" class = "evntcardpic img-fluid">
+                <span class ="span-for-eventcard m-2">
+                    <h3><span class = "text-logocol2">Development Events</span></h3>
+
+                    <p class = "my-2">
+                        Participate in this 12 hour event and compete with 200+ other developers to see who makes not only the best looking but also the best performing and feature rich websites, mobile apps and webapps. The clock will be ticking and pressure will be high. Can you get through ??
+                    </p>
+
+
+                    <button class="btn btn-outline-light light-buttonapna btn-sm my-3">
+                        <a href="/CSSEvent">Participate</a>
+                    </button>
+
+                </span>
+
+            </div>
+
+
+            {% comment %} EVent2 Card {% endcomment %}
+            <div class="d-xl-flex m-2" id = "event2">
+                <img src="static/cryptex.jpg" alt="HTML CSS BOOKS" class = "evntcardpic img-fluid">
+
+                <span class ="span-for-eventcard m-2">
+                    <h3><span class = "text-logocol2">Cryptex</span></h3>
+
+                    <p class = "my-2">
+                        Participate with your team and compete with 100+ other teams to see who can decode/decypher the fastest while keeping a cool and composed mind to understand the clues and win the round. Only 4 teams advance to the 5th and final round.
+                    </p>
+
+
+                    <button class="btn btn-outline-light light-buttonapna btn-sm my-3">
+                        <a href="/cryptex">Participate</a>
+                    </button>
+
+                </span>
+            </div>
+        </div>
+        <dev class="align-lefty">
+            <button class="btn btn-outline-light light-buttonapna btn-lg my-3 mx-4">
+                <a href="/events">More Events</a>
+            </button>
+        </dev>
+    </div>
+</section>
+
+{% endblock %}

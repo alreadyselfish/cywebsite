@@ -1,0 +1,46 @@
+{% extends 'index0.html' %}
+{% block content %}
+
+<section >
+    <div class="container form text-light p-5">
+        <h2 class="formhead"> 
+            Step 1: Fill this form and we will reach out to you soon.
+        </h2>
+
+        <form action="" method="POST" class="formofsorts">
+
+          {% csrf_token %}
+
+            <div class="mb-4">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" name ="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-4">
+              <label for="exampleName" class="form-label">Name</label>
+              <input type="text" name ="name" class="form-control" id="exampleName1" required>
+            </div>
+            <div class="mb-4">
+              <label for="exampleBranch" class="form-label">Branch</label>
+              <input type="text" name ="branch" class="form-control" id="exampleBranch1" required>
+            </div>
+            <div class="mb-4">
+              <label for="exampleRoll" class="form-label">Roll No.</label>
+              <input type="text" name ="roll-no" class="form-control" id="exampleRoll1" required>
+            </div>
+            <div class="mb-4">
+              <label for="exampleskill" class="form-label">Your Skills</label>
+              <input type="text" name ="skills" class="form-control" id="exampleskill1" required>
+            </div>
+
+            <div class="mb-4">
+              <input type="submit" class="btn btn-outline-light light-buttonapna btn-lg my-3" id="submitbt" value="Register">
+            </div>
+        </form>
+            
+
+    </div>
+</section>
+
+
+{% endblock %}
